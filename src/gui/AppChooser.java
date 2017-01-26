@@ -52,7 +52,7 @@ public class AppChooser extends JFrame implements ActionListener
 	{
 		setTitle("File name");
 		setSize(300, 150);
-		Border line = BorderFactory.createMatteBorder(10,10,10,10, Color.WHITE);
+		Border line = BorderFactory.createMatteBorder(10,10,10,10, Color.WHITE);   /* this chooses the  size of  the border and the  colour */
 			
 	
 		files = new JComboBox(getFiles());
@@ -60,14 +60,14 @@ public class AppChooser extends JFrame implements ActionListener
 		JPanel combo = new JPanel(new BorderLayout());
 		combo.add(files, BorderLayout.CENTER);
 		combo.setBorder(line);
-		
+		 /* this creates the layout which include buttons and  combo box with their location within the  GUI */
 		JPanel go = new JPanel(new BorderLayout());
 		JButton goButton = new JButton("Go!"); 
 		go.add(goButton, BorderLayout.CENTER);
 		goButton.addActionListener(this);
 		goButton.setActionCommand("goButton");
 		go.setBorder(line);
-	
+	 /* adds combo box */
 		this.add(combo, BorderLayout.CENTER);
 		this.add(go, BorderLayout.SOUTH);
 
