@@ -21,7 +21,7 @@ package objs;
 
 public class Range 
 {
-	private double min;
+	private double min; /* these are the variables and  data types */
 	private double max;
 	private int count;
 	private double perc;
@@ -32,19 +32,19 @@ public class Range
 		this.count = count;
 		this.perc = perc;
 	}
-	public double getMin() {
+	public double getMin() { /* returns min */
 		return min;
 	}
-	public void setMin(double min) {
+	public void setMin(double min) { /* give variable min a name  */
 		this.min = min;
 	}
-	public double getMax() {
+	public double getMax() { /* returns max */
 		return max;
 	}
-	public void setMax(double max) {
+	public void setMax(double max) { /* sets the max */
 		this.max = max;
 	}
-	public int getCount() {
+	public int getCount() { /*returns count */
 		return count;
 	}
 	public void setCount(int count) {
@@ -57,7 +57,7 @@ public class Range
 		this.perc = perc;
 	}
 	
-	public Range()
+	public Range() /* shows initial setting of all variables */
 	{
 		min = 0;
 		max = 0;
